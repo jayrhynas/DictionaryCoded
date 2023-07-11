@@ -12,7 +12,7 @@ typealias DictionaryCoded<Element> = DictionaryCustomCoded<Element, DefaultDicti
 
 @propertyWrapper
 struct DictionaryCustomCoded<Element, Provider: DictionaryKeyProvider> {
-  let wrappedValue: [Element]
+  var wrappedValue: [Element]
 
   init(wrappedValue: [Element]) {
     self.wrappedValue = wrappedValue
